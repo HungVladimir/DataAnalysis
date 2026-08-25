@@ -1,33 +1,3 @@
-Thực hành 3: Cài đặt Docker và các môi trường khác
-
-tCài đặt Docker Destop 
-
-Việc cài đặt trực tiếp Hadoop (vốn sinh ra cho hệ điều hành Linux) lên Windows theo chuẩn Pseudo-distributed thủ công rất phức tạp, dễ lỗi cấu hình Java, biến môi trường và tốn rất nhiều thời gian sửa lỗi vặt. Trong khi đó, Docker đóng gói sẵn mọi thứ vào một container chạy mượt mà, cô lập và sạch sẽ.. Dùng Docker giúp anh chị gói gọn mọi thứ trong một container biệt lập, máy Windows của anh chị không sợ bị xung đột file hệ thống hay lỗi môi trường. 
-
-Cài đặt WSL 2 trên Windows 11 
-Mở PowerShell bằng quyền Administrator (Nhấn phím Windows, gõ PowerShell, chuột phải chọn Run as administrator). 
-	
-Chạy lệnh wsl --install để bật WSL và cài đặt nhân Linux mặc định (anh chị đợi lệnh chạy xong vì sẽ mất một thời gian tương đối)
-	
-Khởi động lại máy tính (Restart) và mở lại PowerShell bằng quyền Administrator (bước b)
-Chạy lệnh “wsl --version” để kiểm tra xem wsl đã được cài chưa
- 
-Tải và cài đặt Docker Desktop for Windows từ trang chủ Docker
-Chạy file vừa tải về. Ở bảng thông báo cấu hình, hãy đảm bảo tích chọn mục "Use WSL 2 instead of Hyper-V" (nếu có)
-Mở Docker Destop và chọn Accept
-	
-Tạo tài khoản hoặc đăng nhập vào mail
-	
-	
-	
-Đợi đến khi biểu tượng ở góc dưới bên trái là được. Như của ad là “✓ v4.87.0“
-
-
-Cài đặt các môi trường qua Docker
-Mở AntiGravity IDE lên và chọn vào thư mục Thực hành của bạn (ví dụ D:\NguyenMinhHuong\TA\SS_Bigdata\) 
-Chọn new file và đặt tên cho file đó là docker-compose.yml, sau đó dán nội dung sau vào
-	
-
 version: '3.8'
 
 networks:
@@ -218,32 +188,3 @@ services:
   #     - kafka
   #   networks:
   #     - bigdata-network
-
-
-
-
-Tạo thêm một file cạnh đó tên là .env và dán nội dung này vào: 
-GEMINI_API_KEY=your_gemini_api_key_here
-POSTGRES_HOST=localhost
-POSTGRES_PORT=5432
-POSTGRES_DB=bigdata_db
-POSTGRES_USER=bigdata_user
-POSTGRES_PASSWORD=BigDataPass123
-MONGO_HOST=localhost
-MONGO_PORT=27017
-NEO4J_URI=bolt://localhost:7687
-NEO4J_USER=neo4j
-NEO4J_PASSWORD=BigDataPass123
-KAFKA_BOOTSTRAP_SERVERS=localhost:9092
-Mở Docker Tesktop ra và quay lại Antigravity mở terminal lên (Ctrl + ~) và chạy lệnh “docker compose up -d”. Kết quả như ảnh dưới là xong.
-
-
-
-** Nếu gặp bất kỳ lỗi gì trong quá trình cài đặt, anh chị hãy nhờ sự trợ giúp từ các trợ giảng nhé!
-
-
-
-
-
--------- THE END --------- 
-
