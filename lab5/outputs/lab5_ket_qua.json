@@ -1,0 +1,169 @@
+{
+  "spark_version": "4.2.0",
+  "master": "local[*]",
+  "so_loi": 12,
+  "t_d2_rdd_wordcount_s": 0.428,
+  "t_d3_df_doanh_thu_s": 0.803,
+  "t_d6_khong_cache_s": 0.963,
+  "t_d6_co_cache_s": 0.565,
+  "t_d8_spark_trong_cum_s": 9.29,
+  "so_exchange_ke_hoach_wide": 2,
+  "timings_buoi_04": {
+    "python_thuan_notebook_s": 0.0039,
+    "python_ong_dan_unix_s": 5.921,
+    "yarn_wordcount_s": 29.19,
+    "yarn_revenue_s": 29.2,
+    "pandas_s": 0.315,
+    "so_dong_giao_dich": 200000,
+    "ket_qua_doanh_thu": {
+      "Gia dụng": [
+        32231,
+        58925123000
+      ],
+      "Mỹ phẩm": [
+        19839,
+        17421590000
+      ],
+      "Sách": [
+        24000,
+        6693153000
+      ],
+      "Thời trang": [
+        27778,
+        47277119000
+      ],
+      "Thực phẩm": [
+        59856,
+        18555159000
+      ],
+      "Điện tử": [
+        36296,
+        57872658000
+      ]
+    },
+    "ket_qua_wordcount_top10": [
+      [
+        "một",
+        43
+      ],
+      [
+        "dữ",
+        27
+      ],
+      [
+        "liệu",
+        27
+      ],
+      [
+        "của",
+        26
+      ],
+      [
+        "là",
+        20
+      ],
+      [
+        "máy",
+        20
+      ],
+      [
+        "và",
+        16
+      ],
+      [
+        "ghi",
+        15
+      ],
+      [
+        "spark",
+        13
+      ],
+      [
+        "mỗi",
+        11
+      ]
+    ]
+  },
+  "bang_so_sanh": [
+    {
+      "phep_tinh": "WordCount (7 KB)",
+      "mapreduce_s": 29.19,
+      "spark_s": 0.43,
+      "nhanh_hon": 68.2
+    },
+    {
+      "phep_tinh": "Doanh thu (18,5 MB)",
+      "mapreduce_s": 29.2,
+      "spark_s": 0.8,
+      "nhanh_hon": 36.4
+    }
+  ],
+  "ket_qua_wordcount_top10": [
+    [
+      "một",
+      43
+    ],
+    [
+      "dữ",
+      27
+    ],
+    [
+      "liệu",
+      27
+    ],
+    [
+      "của",
+      26
+    ],
+    [
+      "là",
+      20
+    ],
+    [
+      "máy",
+      20
+    ],
+    [
+      "và",
+      16
+    ],
+    [
+      "ghi",
+      15
+    ],
+    [
+      "spark",
+      13
+    ],
+    [
+      "mỗi",
+      11
+    ]
+  ],
+  "ket_qua_doanh_thu": {
+    "Gia dụng": [
+      32231,
+      58925123000
+    ],
+    "Điện tử": [
+      36296,
+      57872658000
+    ],
+    "Thời trang": [
+      27778,
+      47277119000
+    ],
+    "Thực phẩm": [
+      59856,
+      18555159000
+    ],
+    "Mỹ phẩm": [
+      19839,
+      17421590000
+    ],
+    "Sách": [
+      24000,
+      6693153000
+    ]
+  }
+}
